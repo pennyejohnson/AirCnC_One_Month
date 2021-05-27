@@ -1,0 +1,354 @@
+/*
+ * General/Utility Styles
+*/
+
+* {
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box; /* IE */
+}
+
+body {
+  margin: 0;
+  background: rgb(245, 245, 245);
+  font-family: 'Open Sans', arial, sans-serif;
+  font-size: 0.875rem;
+  color: rgb(86, 90, 92);
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+a {
+  font-weight: bold;
+  color: rgb(255, 89, 95);
+  text-decoration: none;
+}
+
+strong {
+  font-weight: 600;
+}
+
+/*
+ * Heading
+*/
+
+h1 {
+  font-size: 22px;
+  color: #666A6C;
+}
+
+
+
+
+
+/*
+ * Header and .hero Styles
+*/
+
+header {
+  background: #FFF;
+}
+
+header .logo {
+  border-right: 1px solid #DCE0E0;
+}
+
+.hero img {
+  width: 100%;
+}
+
+
+/*
+ * Info Styles
+*/
+ 
+.info {
+  background: #FFF;
+  text-align: center;
+  padding: 25px;
+}
+
+.info h1 {
+  margin-bottom: 5px;
+  font-size: 22px;
+  color: #666A6C;
+}
+
+.info .profile {
+  margin-bottom: 24px;
+}
+
+
+.info .owner-details img {
+  border-radius: 50%;
+  margin-bottom: 6px;
+
+}
+
+.info h2.relationship, .info h2.name {
+  color: #909597;
+  margin-bottom: 3px;
+  font-size: 14px;
+  color: #909597;
+}
+
+.info h2.name {
+  font-weight: bold;
+}
+
+.info p.location {
+  margin-bottom: 20px;
+}
+
+.info .icon {
+  float: left;
+  width: 33.3%;
+} 
+
+.info .icon img {
+  height: 30px;
+  margin-bottom: 3px;
+}
+
+.info .booking h2 {
+  font-weight: 600;
+  font-size: 22px;
+  margin-bottom: 13px;
+}
+
+.info h2.time {
+  font-size: 16px;
+}
+
+
+
+/*
+ * Summary Styles
+*/
+
+.summary {
+  text-align: center;
+  padding: 25px;
+  background: ltgrey;
+}
+
+.summary .about {
+  text-align: center;
+}
+
+.summary .about h2 {
+  margin-bottom: 30px;
+  font-size: 16px;
+  color: #565A5C;
+  font-weight: bold;
+  padding-top: 30px;
+}
+
+.summary .about p {
+  margin-bottom: 30px;
+  font-size: 13px;
+  line-height: 22px;
+  color: #565A5C;
+  text-align: left;
+ }
+
+.summary .about h5 {
+  margin-bottom:30px;
+  font-size: 13px;
+  color: #FF595F;
+  font-weight: bold;
+ }
+
+.summary .care {
+  margin-bottom: 30px;  
+  text-align: left;
+  font-size: 13px;
+  line-height: 22px;
+  color: #565A5C;
+}
+
+.summary .gameContainer {
+  
+  float: left;
+}
+
+
+.summary .allgames h4 {
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+.summary .allgames h5 {
+  display: inline;
+  line-height: 26px
+  float: right;
+  text-align: left;
+}
+
+.summary .photos img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  padding-top: 30px;
+}
+
+/*
+ * Media query
+*/
+
+@media only screen and (min-width: 1060px) {
+   .container {
+    width: 1040px;
+    margin: 0 auto;
+  }
+    
+.column {
+    float: left;
+  }
+
+.info .profile {
+  width: 660px;
+  border-right: 1px solid #DCE0E0;
+}
+
+.info .booking {
+  width: 380px
+}
+
+.info .owner-details {
+  width: 20%;
+}
+
+.info .pet-details {
+  width: 80%;
+  text-align: left;
+}
+
+.info .pet-details .icon {
+  width: inherit;
+  margin-right: 50px;
+}
+
+.info .pet-details .icon img {
+  display: block;
+  margin: 3px auto 3px;
+}
+
+
+.containerBottom {
+    width: 1040px;
+    margin: 0 auto;
+ }
+
+.summary .about {
+  width: 660px;
+  
+ }
+
+.summary .about h5 {
+  text-align: left;
+}
+
+.summary .care {
+   width: 660px;
+  
+}
+
+.summary .mainCare {
+  float: left;
+  width: 25%;
+}
+
+.summary .diet {
+  float: left;
+  width: 40%;
+}
+
+.summary .time {
+  float: left;
+  width: 35%;
+}
+
+.summary .allgames {
+   width: 660px;
+   
+}
+
+.summary .mainGame {
+  float: left;
+  width: 25%;
+  margin: 0;
+}
+
+.summary .mainGame h4 {
+ text-align: left;
+}
+
+.summary .gameContainer {
+  width: 260px;
+  float: left;
+}
+
+
+.summary .game {
+  line-height: 26px;
+  width: 45%;
+}
+
+.summary .game img {
+  float: left;
+  margin: 0 15px 0 0;
+  }
+
+.summary .game h5 {
+  float: left;
+  margin: 0;
+}
+
+.summary .photos {
+  width: 660px;
+}
+
+.summary .photos img {
+  float: left;
+  display: inline;
+  width: 33.33%;
+  padding:28px 10px 80px 0;
+ }
+
+
+} <!--media query-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+ * Button styles
+*/
+
+.button {
+  background: rgb(255, 89, 95);
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 0.75rem 5rem;
+  border-bottom: 1px solid rgb(227, 25, 29);
+  border-radius: 2px;
+  width: 95%;
+  margin: 0 auto;
+}
